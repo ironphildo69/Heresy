@@ -1,0 +1,13 @@
+item.test.name=Space Marine
+item.imperialguardhelmet.name=Imperial Guard Helmet
+item.imperialguardchest.name=Imperial Guard Chestplate
+item.imperialguardlegs.name=Imperial Guard Leggings
+item.imperialguardfeet.name=Imperial Guard Boots
+
+
+item.plasteelingot.name=Plasteel Ingot
+item.ceramiteingot.name=Ceramite Ingot
+
+tile.blockplasteel.name=Plasteel Block
+tile.blockadamantium.name=Adamantium Block
+tile.blockceramite.name=Ceramite Block

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ironphildo69.heresy",
+  "name": "Heresy",
+  "description": "Tech and Magic, for the Emperor",
+  "version": "0.1",
+  "mcversion": "1.10",
+  "url": "binarygaming.net",
+  "updateUrl": "",
+  "authorList": ["IronPhildo69"],
+  "credits": "The Forge and FML guys for making a awesome API and the BGN Gaming Community.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
