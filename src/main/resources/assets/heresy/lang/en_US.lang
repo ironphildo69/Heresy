@@ -11,3 +11,5 @@ item.ceramiteingot.name=Ceramite Ingot
 tile.blockplasteel.name=Plasteel Block
 tile.blockadamantium.name=Adamantium Block
 tile.blockceramite.name=Ceramite Block
+
+itemGroup.tabHeresy=Heresy

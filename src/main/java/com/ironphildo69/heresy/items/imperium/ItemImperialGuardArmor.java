@@ -1,5 +1,6 @@
 package com.ironphildo69.heresy.items.imperium;
 
+import com.ironphildo69.heresy.Heresy;
 import com.ironphildo69.heresy.Reference;
 import com.ironphildo69.heresy.Reference.HeresyItems;
 import com.ironphildo69.heresy.init.ModItems;
@@ -32,7 +33,7 @@ public class ItemImperialGuardArmor extends ItemArmor {
 	        setRegistryName(itemToCreate.getRegistryName()); // i added this, there was no setregistry name before
 	        // but these don't work for some fucking reason
 	        
-	        setCreativeTab(CreativeTabs.COMBAT);
+	        setCreativeTab(Heresy.CREATIVE_TAB);
 	        ItemStack item = new ItemStack(this);	       
 	        item.addEnchantment(Enchantment.getEnchantmentByID(1), 4);
 	    }

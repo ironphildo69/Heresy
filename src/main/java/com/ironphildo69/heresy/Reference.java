@@ -13,7 +13,7 @@ public class Reference {
     public static enum HeresyItems {
     	
     	//Imperial Items
-    	TEST("itemtest", "ItemTest"),
+    	ITEMTEST("test", "ItemTest"),
     	ITEMIMPERIALGUARDHELMET("imperialguardhelmet", "ItemImperialGuardHelmet"),
     	ITEMIMPERIALGUARDCHEST("imperialguardchest", "ItemImperialGuardChest"),
     	ITEMIMPERIALGUARDLEGS("imperialguardlegs", "ItemImperialGuardLegs"),

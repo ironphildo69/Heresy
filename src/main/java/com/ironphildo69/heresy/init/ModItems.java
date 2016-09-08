@@ -19,23 +19,18 @@ import java.util.Map;
 
 public class ModItems {
 	
-	//Declares new items.
+	//Declares new items.	
+
 	
-	public static Item test;
-	public static Item plasteelingot;
-	public static Item ceramiteingot;
-	
-	//Initializes new items - DONT FORGET THIS
-	
+	//Initializes new items using a HashTable - DONT FORGET THIS
 	public static HashMap<HeresyItems, Item> items = new HashMap<HeresyItems,Item>();
-	// when i grow up i will fucking murder the developers of java
+	
 	public static void init() {
-		test = new ItemTest();
 
 		//Ingots
-		
-		items.put(Reference.HeresyItems.ITEMPLASTEELINGOT, plasteelingot = new ItemPlasteelIngot());
-		items.put(Reference.HeresyItems.ITEMCERAMITEINGOT, ceramiteingot = new ItemCeramiteIngot());
+		items.put(Reference.HeresyItems.ITEMTEST, new ItemTest());
+		items.put(Reference.HeresyItems.ITEMPLASTEELINGOT, new ItemPlasteelIngot());
+		items.put(Reference.HeresyItems.ITEMCERAMITEINGOT, new ItemCeramiteIngot());
 		
 		items.put(Reference.HeresyItems.ITEMIMPERIALGUARDHELMET, new ItemImperialGuardArmor(Reference.HeresyItems.ITEMIMPERIALGUARDHELMET, ItemImperialGuardArmor.CERAMIC, 1, EntityEquipmentSlot.HEAD));
 		items.put(Reference.HeresyItems.ITEMIMPERIALGUARDCHEST, new ItemImperialGuardArmor(Reference.HeresyItems.ITEMIMPERIALGUARDCHEST, ItemImperialGuardArmor.CERAMIC, 1, EntityEquipmentSlot.CHEST));
@@ -45,21 +40,16 @@ public class ModItems {
 	}
 	
 	//Registers Items into the Minecraft Item directory - note, don't forget this yet again
-	
 	public static void register() {
-		GameRegistry.register(test);
 		
 		for(Map.Entry<HeresyItems, Item> it : items.entrySet())
             GameRegistry.register(it.getValue());
-		// xD
+
 	}
 	
 	//register the renders for drawing the object
-	
 	public static void registerRenders() {
-		registerRender(test);
-
-	//fire the machine	
+	
 		for(Map.Entry<HeresyItems, Item> it : items.entrySet())
             registerRender(it.getValue());
 	}

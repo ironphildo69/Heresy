@@ -5,6 +5,7 @@ import com.ironphildo69.heresy.init.ModCrafting;
 import com.ironphildo69.heresy.init.ModItems;
 import com.ironphildo69.heresy.proxy.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -26,6 +27,8 @@ public class Heresy
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
+	
+	public static final CreativeTabs CREATIVE_TAB = new HeresyTab();
 	
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)

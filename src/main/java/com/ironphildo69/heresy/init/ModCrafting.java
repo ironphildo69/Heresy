@@ -9,16 +9,15 @@ public class ModCrafting {
 
 	public static void register() {
 		
-		//Imperium Blocks
+		//Imperium Crafting
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.blockplasteel), "CCC", "CCC", "CCC", 'C', ModItems.items.get(Reference.HeresyItems.ITEMPLASTEELINGOT));
-		// can you do this one
-		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDHELMET)), "CCC", "CXC", "XXX", 'C', ModItems.ceramiteingot);
-		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDCHEST)), "CXC", "CCC", "CCC", 'C', ModItems.ceramiteingot);
-		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDLEGS)), "CCC", "CXC", "CXC", 'C', ModItems.ceramiteingot);
-		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDFEET)), "XXX", "CCC", "CXC", 'C', ModItems.ceramiteingot);
-		
-		
+		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.blockceramite), "CCC", "CCC", "CCC", 'C', ModItems.items.get(Reference.HeresyItems.ITEMCERAMITEINGOT));
+
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDHELMET)), "CCC", "CXC", "XXX", 'C', ModItems.items.get(Reference.HeresyItems.ITEMCERAMITEINGOT));
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDCHEST)), "CXC", "CCC", "CCC", 'C', ModItems.items.get(Reference.HeresyItems.ITEMCERAMITEINGOT));
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDLEGS)), "CCC", "CXC", "CXC", 'C', ModItems.items.get(Reference.HeresyItems.ITEMCERAMITEINGOT));
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.items.get(Reference.HeresyItems.ITEMIMPERIALGUARDFEET)), "XXX", "CCC", "CXC", 'C', ModItems.items.get(Reference.HeresyItems.ITEMCERAMITEINGOT));
 		
 	}
 }
